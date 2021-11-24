@@ -1,0 +1,13 @@
+<launch>
+  <!-- Run the map server -->
+  <node name="map_server" pkg="map_server" type="map_server" args="$(find amcl)/maps/map_jt.yaml" output="screen"/>
+   
+  <include file="$(find amcl)/examples/amcl_diff.launch" />
+
+  <node name="rviz" pkg="rviz" type="rviz" required="true"
+      args="-d $(find amcl)/spark.rviz" /> 
+
+  <node name="playbag" pkg="rosbag" type="play"
+      args="--clock $(arg bag_filename)" />
+
+</launch>
