@@ -26,7 +26,7 @@ For ROS melodic:
 
 	$ cd ~/catkin_ws/src 
 	$ rm -rf cartographer_ros/
-	$ git clone https://github.com/AIRS-TJ/cartographer_ros.git
+	$ git clone https://github.com/AIRS-TJ/cartographer_and_qrcode.git
 
 	$ catkin_make_isolated --install --use-ninja
 
