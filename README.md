@@ -44,8 +44,10 @@ For ROS melodic:
 
 	$ source install_isolated/setup.bash
 
-运行：
+**运行:**
+
 打开有二维码的gazebo环境:
+
 	$ gedit ~/.bashrc 
 export TURTLEBOT3_MODEL=waffle_pi
 
@@ -54,11 +56,14 @@ export TURTLEBOT3_MODEL=waffle_pi
 	$ roslaunch turtlebot3_gazebo turtlebot3_warehouse.launch
 
 打开遥控：
+
 	$ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 
 打开turtlebot3的visp_auto_tracker:
+
 	$ roslaunch visp_auto_tracker turtlebot3.launch 
 
 打开cartographer和rviz:
+
 	$ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=cartographer
 
