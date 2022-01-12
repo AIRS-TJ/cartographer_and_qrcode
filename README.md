@@ -28,6 +28,8 @@ ros melodic install refer:http://wiki.ros.org/melodic/Installation/Ubuntu
 	
 	$ sudo apt-get install ros-melodic-map-server
 	$ sudo apt-get install ros-melodic-visp
+	$ sudo apt-get install ros-melodic-tf2-sensor-msgs 
+	$ sudo apt-get install ros-melodic-navigation
 
 	$ cd ~/catkin_ws/src 
 	$ rm -rf cartographer_ros/
@@ -36,6 +38,16 @@ ros melodic install refer:http://wiki.ros.org/melodic/Installation/Ubuntu
 	$ catkin_make_isolated --install --use-ninja
 
 ## 2. Usage
+
+**TURTLEBOT3环境变量：**
+
+	$ gedit ~/.bashrc 
+	
+写入：
+
+export TURTLEBOT3_MODEL=waffle_pi
+
+(说明：waffle_pi有摄像头)
 
 **编译:**
 
@@ -54,11 +66,6 @@ ros melodic install refer:http://wiki.ros.org/melodic/Installation/Ubuntu
 **运行:**
 
 打开有二维码的gazebo环境:
-
-	$ gedit ~/.bashrc 
-export TURTLEBOT3_MODEL=waffle_pi
-
-(说明：waffle_pi有摄像头)
 
 	$ roslaunch turtlebot3_gazebo turtlebot3_warehouse.launch
 
