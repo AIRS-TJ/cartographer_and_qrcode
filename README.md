@@ -32,7 +32,7 @@ ros melodic install refer:http://wiki.ros.org/melodic/Installation/Ubuntu
 	$ cd ~/catkin_ws/src 
 	$ rm -rf cartographer_ros/
 	$ git clone https://github.com/AIRS-TJ/cartographer_and_qrcode.git
-
+	$ cd ..
 	$ catkin_make_isolated --install --use-ninja
 
 ## 2. Usage
