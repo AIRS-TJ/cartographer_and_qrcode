@@ -1,11 +1,18 @@
 # cartographer_and_qrcode
 
-# 1. Installation
+## 1. Enviroment
 
 We have tested cartographer_ros on machines with the following configurations
+
 * Ubuntu 18.04.6 LTS + ROS melodic
 
-For ROS melodic:
+### 1.1. ros melodic install
+
+refer:http://wiki.ros.org/melodic/Installation/Ubuntu
+
+### 1.2. gazebo 
+
+## 2. Installation
 
 	$ sudo apt-get update
 	$ sudo apt-get install -y python-wstool python-rosdep ninja-build stow
@@ -30,7 +37,7 @@ For ROS melodic:
 
 	$ catkin_make_isolated --install --use-ninja
 
-# 2. Usage
+## 3. Usage
 
 **编译:**
 
