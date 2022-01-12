@@ -20,19 +20,18 @@ ros melodic install refer:http://wiki.ros.org/melodic/Installation/Ubuntu
 	$ wstool init src
 	$ wstool merge -t src https://raw.githubusercontent.com/cartographer-project/cartographer_ros/master/cartographer_ros.rosinstall
 	$ wstool update -t src
-
 	$ sudo rosdep init
 	$ rosdep update
 	$ rosdep install --from-paths src --ignore-src --rosdistro=melodic -y
-
 	$ src/cartographer/scripts/install_abseil.sh
-
 	$ sudo apt-get remove ros-melodic-abseil-cpp
+	
+	$ sudo apt-get install ros-melodic-map-server
 
 	$ cd ~/catkin_ws/src 
 	$ rm -rf cartographer_ros/
 	$ git clone https://github.com/AIRS-TJ/cartographer_and_qrcode.git
-	$ sudo apt-get install ros-melodic-map-server
+
 	$ cd ..
 	$ catkin_make_isolated --install --use-ninja
 
