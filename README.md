@@ -35,7 +35,7 @@ ros melodic install refer:http://wiki.ros.org/melodic/Installation/Ubuntu
 
 	$ catkin_make_isolated --install --use-ninja
 
-## 3. Usage
+## 2. Usage
 
 **编译:**
 
