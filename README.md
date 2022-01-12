@@ -47,6 +47,8 @@ ros melodic install refer:http://wiki.ros.org/melodic/Installation/Ubuntu
 
 **运行之前souce环境变量：**
 
+	$ cd ~/catkin_ws/
+	
 	$ source install_isolated/setup.bash
 
 **运行:**
