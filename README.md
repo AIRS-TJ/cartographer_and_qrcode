@@ -66,6 +66,7 @@ export TURTLEBOT3_MODEL=waffle_pi
 **运行:**
 
 打开有二维码的gazebo环境:
+
 (初次打开gazebo环境，要等待一段时间)
 
 	$ roslaunch turtlebot3_gazebo turtlebot3_warehouse.launch
