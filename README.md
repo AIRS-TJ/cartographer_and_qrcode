@@ -53,7 +53,7 @@ ros melodic install refer:http://wiki.ros.org/melodic/Installation/Ubuntu
 	
 	$ source install_isolated/setup.bash
 
-**TURTLEBOT3环境变量：**
+**写入turtlebot3的变量:：**
 
 	$ gedit ~/.bashrc 
 	
