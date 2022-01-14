@@ -34,10 +34,16 @@ ros melodic install refer:http://wiki.ros.org/melodic/Installation/Ubuntu
 	$ cd ~/catkin_ws/src 
 	$ rm -rf cartographer_ros/
 	$ git clone https://github.com/AIRS-TJ/cartographer_and_qrcode.git
-	$ cd ..
-	$ catkin_make_isolated --install --use-ninja
 
 ## 2. Usage
+
+**编译:**
+
+	$ cd ~/catkin_ws/
+
+	$ catkin_make_isolated --install --use-ninja 
+
+注意：任何文件只要修改了内容就需要重新编译，即使修改的launch文件或配置都需要重新编译
 
 **TURTLEBOT3环境变量：**
 
@@ -49,13 +55,6 @@ export TURTLEBOT3_MODEL=waffle_pi
 
 (说明：waffle_pi有摄像头)
 
-**编译:**
-
-	$ cd ~/catkin_ws/
-
-	$ catkin_make_isolated --install --use-ninja 
-
-注意：任何文件只要修改了内容就需要重新编译，即使修改的launch文件或配置都需要重新编译
 
 **运行之前souce环境变量：**
 
