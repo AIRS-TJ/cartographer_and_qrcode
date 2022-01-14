@@ -53,7 +53,7 @@ ros melodic install refer:http://wiki.ros.org/melodic/Installation/Ubuntu
 
 export TURTLEBOT3_MODEL=waffle_pi
 
-(说明：waffle_pi有摄像头)
+(说明：TurtleBot3有三个型号，burger， waffle，waffle_pi; waffle_pi是带有摄像头的一款)
 
 
 **运行之前souce环境变量：**
