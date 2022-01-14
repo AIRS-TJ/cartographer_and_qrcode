@@ -43,7 +43,15 @@ ros melodic install refer:http://wiki.ros.org/melodic/Installation/Ubuntu
 
 	$ catkin_make_isolated --install --use-ninja 
 
-注意：任何文件只要修改了内容就需要重新编译，即使修改的launch文件或配置都需要重新编译
+**注意：**
+
+1.任何文件只要修改了内容就需要重新编译，即使修改的launch文件或配置都需要重新编译
+
+2.运行之前要souce环境变量：
+
+	$ cd ~/catkin_ws/
+	
+	$ source install_isolated/setup.bash
 
 **TURTLEBOT3环境变量：**
 
@@ -54,13 +62,6 @@ ros melodic install refer:http://wiki.ros.org/melodic/Installation/Ubuntu
 export TURTLEBOT3_MODEL=waffle_pi
 
 (说明：TurtleBot3有三个型号，burger， waffle，waffle_pi; waffle_pi是带有摄像头的一款)
-
-
-**运行之前souce环境变量：**
-
-	$ cd ~/catkin_ws/
-	
-	$ source install_isolated/setup.bash
 
 **运行:**
 
